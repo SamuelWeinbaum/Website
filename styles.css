@@ -132,6 +132,12 @@ a:hover {
     color: #193d70;
 }
 
+.about-photo {
+    float: right;
+    width: 300px;
+    margin: 0 0 15px 25px;
+    border-radius: 8px;
+}
 
 /* Footer */
 

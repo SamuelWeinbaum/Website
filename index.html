@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Weinbaum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html" class="site-name">
+            Samuel Weinbaum
+        </a>
+
+        <div class="navigation">
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="physics_interests.html">Interesting Physics</a>
+                <a href="physics_works.html">My Physics</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <h1>About Me</h1>
+
+        <p>
+            My name is Samuel and I'm a fourth student in the honors mathematics and physics program at McGill University.
+            I'm also a pianist at a well-known Montreal restaurant called <a href="https://www.sho-dan.com/" target="_blank">Sho-Dan</a>. 
+
+            I am fascinated by theoretical physics. In particular, I am most interested in the fields of quantum field theory, general relativity, quantum gravity and the foundations of quantum mechanics. I'm currently doing
+            research on quantum field theory with my adviser professor <a href="https://www.physics.mcgill.ca/~schuot/" target="_blank" rel="noopener noreferrer">Simon Caron-Huot</a>. I'm also doing 
+            more mathematical reseach on quantum field theory with professor <a href="https://www.math.mcgill.ca/jkamni/" target="_blank" rel="noopener noreferrer">Joel Kamnitzer</a>.
+            
+            To Pursue my passion for physics I've worked through many textbooks. Here is a list of <a href="#" onclick="document.getElementById('bookList').style.display='block'; return false;">
+                Textbooks I've Read
+            </a>. This list doesn't include the textbooks for which I only read part. I hope you enjoy looking around my personal website :)
+
+        </p>
+
+
+        <h2>About This Website</h2>
+
+        <p>
+            The goal of this website is to help share the many interests I have with the world. There are so many wonderful and interesting ideas that are worth sharing.
+            I belive that this site can help me share the ideas that I think are beautiful (or not).
+        </p>
+
+        <ul>
+            <li>
+                In the <a href="physics_interests.html">Interesting Physics</a>
+                section, I will put all the physics related things I find interesting and that I think are worth sharing.
+            </li>
+
+            <li>
+                In the <a href="physics_works.html">My Physics</a>
+                section, You can find my solutions to textbooks as well as papers I've written. I plan on adding all my works over time.
+            </li>
+        </ul>
+
+        <p>
+           This site is still in constuction.
+        </p>
+
+        <h2>Interests</h2>
+
+        <h3>Quantum Gravity</h3>
+        <p>
+            I've been interested in this subject since I began physics. The idea that the two major theories in physics, quantum field theory and general relativity are incompatible
+             is very intriguing to me. I've made it my goal to learn enough about both subjects to understand the difficulty. Thats why I am working so hard to learn quantum field theory 
+             and why I spent so much of my undergraduate degree learning general relativity and its prerequisites. I think now, I am nearly ready to begin learning theories of quantum gravity.
+             This is very exciting!
+        </p>
+        <h3>Foundations of Quantum Mechanics</h3>
+        <p>
+            I got interested in foundations after studying Sakurai's and Griffith's textbooks on quantum mechanics. Quantum mechanics is an algorithm for computing observable quantities 
+            but it doesn't tell you what is going on physically. This was very intriguing to me, because quantum theory is the most fundamental theory 
+            in physics and there seems to be a deep mystery on how to interpret it. This led me to read a textbook called The Foundations of Quantum Mechanics by Roderich Tumulka, which taught me 
+            about all the different interpretations as well as related ideas like Bell's theorems. This got me very excited to learn more. One of the goals of
+            this website is to allow me to share some of the interesting discoveries I find in the foundations of quantum mechanics.
+        </p>
+
+        <h3>Music</h3>
+        <p>
+            I have loved classical music since I began playing the piano at fifteen. I love listening to classical music and I enjoy improvising on the piano in a classical style. I also enjoying listening to other genres. 
+            I have three years experience playing professionally. 
+        </p>
+
+
+
+
+        <h2>Other Information</h2>
+
+        <ul>
+            <li>My: <a href="https://drive.google.com/file/d/YOUR_FILE_ID/view" target="_blank" rel="noopener noreferrer">CV</a></li>
+            <li>Email: <a href="mailto:w.shmuly@gmail.com">w.shmuly@gmail.com</a></li>
+            <li>McGill Email: <a href="mailto:shmuel.weinbaum@mail.mcgill.ca">shmuel.weinbaum@mail.mcgill.ca</a></li>
+     
+        </ul>
+
+    </main>
+
+
+    <footer>
+        Samuel Weinbaum
+    </footer>
+
+
+    <div id="bookList" style="
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background:white;
+    color:black;
+    padding:20px;
+    border:1px solid black;
+    width:450px;
+    max-width:100%;
+    max-height:80vh;
+    overflow-y:auto;
+    z-index:1000;
+">
+
+    <span onclick="document.getElementById('bookList').style.display='none';"
+          style="float:right; cursor:pointer; font-weight:bold;">
+        X
+    </span>
+
+    <h3 style="margin-top:0;">Textbooks I've Read</h3>
+
+    <ul style="padding-left:20px; line-height:1.6;">
+        <li data-status="in-progress"><a href="https://www.goodreads.com/book/show/153919.Quantum_Field_Theory" target="_blank" rel="noopener noreferrer">Quantum Field Theory</a> — Mark Srednicki 
+            <br><span style="color: #16A34A; font-weight: 600;">
+            (in progress)
+        </span></li>
+       
+
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/46352.The_Large_Scale_Structure_of_Space_Time" target="_blank" rel="noopener noreferrer">The Large Scale Structure of Space-Time</a><br>
+            S. W. Hawking and G. F. R. Ellis
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/6291925-modern-quantum-mechanics" target="_blank" rel="noopener noreferrer">Modern Quantum Mechanics</a><br>
+            J. J. Sakurai and Jim Napolitano
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/259680.Spacetime_and_Geometry" target="_blank" rel="noopener noreferrer">Spacetime and Geometry: An Introduction to General Relativity</a><br>
+            Sean M. Carroll
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/1246832.Introduction_to_Smooth_Manifolds" target="_blank" rel="noopener noreferrer">Introduction to Smooth Manifolds</a><br>
+            John M. Lee
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/1748333.Topology_and_Geometry" target="_blank" rel="noopener noreferrer">Topology and Geometry</a><br>
+            Glen E. Bredon
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/1132152.Functions_of_One_Complex_Variable" target="_blank" rel="noopener noreferrer">Functions of One Complex Variable</a><br>
+            John B. Conway
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/62966413?ref=s_s" target="_blank" rel="noopener noreferrer">Foundations of Quantum Mechanics</a><br>
+            Roderich Tumulka
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/153908.Introduction_to_Quantum_Mechanics" target="_blank" rel="noopener noreferrer">Introduction to Quantum Mechanics</a><br>
+            David J. Griffiths
+        </li>
+        
+        <li data-status="read">
+            PHYS 260: Modern Physics and Relativity Class Notes<br>
+            Adrian Liu
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/145292.Introduction_to_Electrodynamics" target="_blank" rel="noopener noreferrer">Introduction to Electrodynamics</a><br>
+            David J. Griffiths
+        </li>
+
+        <li data-status="read">
+            Algebra III Class Notes<br>
+            Ayel Goren
+        </li>
+
+        <li data-status="read">
+            Algebra II Class Notes<br>
+            Ayel Goren
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/845794.Understanding_Analysis" target="_blank" rel="noopener noreferrer">Understanding Analysis</a><br>
+            Stephen Abbott
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/59201247-partial-differential-equations" target="_blank" rel="noopener noreferrer">Partial Differential Equations: A First Course</a><br>
+            Rustum Choksi
+        </li>
+        
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/245483.Classical_Mechanics" target="_blank" rel="noopener noreferrer">Classical Mechanics</a><br>
+            John R. Taylor
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/1796067.Introduction_to_Classical_Mechanics" target="_blank" rel="noopener noreferrer">Introduction to Classical Mechanics: With Problems and Solutions</a><br>
+            David Morin
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/9654114-elementary-linear-algebra" target="_blank" rel="noopener noreferrer">Elementary Linear Algebra: Applications Version</a><br>
+            Howard Anton and Chris Rorres
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/search?q=Ordinary+Differential+Equations+Morris+Tenenbaum" target="_blank" rel="noopener noreferrer">Ordinary Differential Equations</a><br>
+            Morris Tenenbaum and Harry Pollard
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/en/book/show/807808.Calculus" target="_blank" rel="noopener noreferrer">Calculus: A Complete Course</a><br>
+            Robert A. Adams
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/book/show/10193883-single-variable-calculus" target="_blank" rel="noopener noreferrer">Calculus: Multivariable</a><br>
+            Jon Rogawski
+        </li>
+        
+        <li data-status="read">
+            <a href="https://www.goodreads.com/en/book/show/61298.Calculus" target="_blank" rel="noopener noreferrer">Calculus: Early Transcendentals</a><br>
+            James Stewart
+        </li>
+        
+</ul>
+
+</div>
+
+</body>
+</html>
+

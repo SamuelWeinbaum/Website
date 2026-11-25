@@ -5,39 +5,77 @@ on:
   push:
     branches:
       - main
+
   workflow_dispatch:
 
+# Only allow the workflow to read repository contents
+# and deploy to GitHub Pages.
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Prevent multiple deployments from competing.
+# Do not cancel an active deployment halfway through.
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: github-pages
+  cancel-in-progress: false
 
 jobs:
   deploy:
+    name: Build and Deploy Website
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
+      # 1. Download the latest code from main.
+      - name: Checkout Latest Code
         uses: actions/checkout@v4
+        with:
+          ref: main
 
-      - name: Setup Pages
+      # 2. Validate essential website files.
+      - name: Validate Website Files
+        run: |
+          if [ ! -f index.html ]; then
+            echo "ERROR: index.html is missing from the repository root."
+            exit 1
+          fi
+
+          if [ -f robots.txt ]; then
+            echo "robots.txt found."
+          fi
+
+          if [ -f sitemap.xml ]; then
+            echo "sitemap.xml found."
+          fi
+
+          echo "Website file validation completed."
+
+      # 3. Configure GitHub Pages.
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload website
+      # 4. Package the website.
+      - name: Upload Website Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+          retention-days: 7
 
-      - name: Deploy
+      # 5. Publish the website.
+      - name: Deploy Website
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # 6. Confirm deployment.
+      - name: Deployment Complete
+        run: |
+          echo "Website successfully deployed!"
+          echo "URL: ${{ steps.deployment.outputs.page_url }}"
 
 

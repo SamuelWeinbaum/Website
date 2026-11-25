@@ -75,5 +75,3 @@ jobs:
         run: |
           echo "Website successfully deployed!"
           echo "URL: ${{ steps.deployment.outputs.page_url }}"
-
-

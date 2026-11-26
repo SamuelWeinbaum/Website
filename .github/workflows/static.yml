@@ -28,16 +28,15 @@ jobs:
       - name: Validate Website
         run: |
           if [ ! -f index.html ]; then
-            echo "ERROR: index.html missing!"
+            echo "ERROR: index.html is missing!"
             exit 1
           fi
-
           echo "Website files verified."
 
-      - name: Configure GitHub Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload GitHub Pages Artifact
+      - name: Upload Website Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .

@@ -24,12 +24,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e8f0fa;
+    background-color: #244b7a;
     border-bottom: 1px solid #cbd9eb;
 }
 
 .site-name {
-    color: #222222;
+    color: #ffffff;
     text-decoration: none;
     font-size: 17px;
     font-weight: bold;
@@ -55,7 +55,7 @@ header {
 .hamburger span {
     height: 2px;
     width: 20px;
-    background-color: #222222;
+    background-color: #fffefe;
 }
 
 nav {
@@ -64,12 +64,13 @@ nav {
 }
 
 nav a {
-    color: #315f9e;
+    color: #ffffff;
     text-decoration: none;
     font-size: 13px;
 }
 
 nav a:hover {
+    color: #7493c1;
     text-decoration: underline;
 }
 
@@ -129,7 +130,7 @@ a {
 }
 
 a:hover {
-    color: #193d70;
+    color: hsl(215, 39%, 60%);
 }
 
 .about-photo {
